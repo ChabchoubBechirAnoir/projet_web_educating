@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Create an Account</h2>
+    <form id="registration-form">
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message" id="email-error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <div class="error-message" id="password-error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+            <div class="error-message" id="confirm-password-error-message"></div>
+        </div>                
+        <div class="form-group">
+            <label for="id">ID (must be 8 digits):</label>
+            <input type="text" id="id" name="id" required>
+            <div class="error-message" id="id-error-message"></div>
+        </div>
+        <div class="form-group">
+            <label for="full-name">Full Name:</label>
+            <input type="text" id="full-name" name="full-name" required>
+        </div>
+        <div class="form-group">
+            <label for="birthdate">Date of Birth:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+        </div>
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option value="" selected disabled>Select your country</option>
+                <option value="FR" >France</option>
+                <option value="TN" >Tunisia</option>
+            </select>
+        </div>
+        <button type="submit" id="register-button">Register</button>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p> <!-- Link to login page -->
+
+    <div id="registration-message" class="message"></div>
+  </div>
+</body>
+</html>
