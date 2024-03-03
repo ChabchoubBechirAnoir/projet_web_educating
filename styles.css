@@ -44,16 +44,27 @@ body {
     margin-top: 5px;
   }
   
-  button[type="submit"] {
-    width: calc(100% - 20px);
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+/* Add this CSS to your styles.css file */
+
+/* Style for the button */
+button[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Change the appearance of the button when it's disabled */
+button[type="submit"]:disabled {
+  background-color: #dddddd; /* Light gray */
+  color: #666666; /* Dark gray */
+  cursor: not-allowed;
+  opacity: 0.6; /* Reduced opacity */
+}
+
   
   button[type="submit"]:hover {
     background-color: #45a049;
